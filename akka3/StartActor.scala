@@ -24,9 +24,9 @@ class HelloActor extends Actor{
 }
 
 object StartActor {
-  def mapTo(f: Unit): Future[String] = {
-    Future[String]("")
-  }
+//  def mapTo(f: Unit): Future[String] = {
+//    Future[String]("")
+//  }
 
   def main(args: Array[String]) {
     println("StartActor")
@@ -36,9 +36,9 @@ object StartActor {
 
     println("Send Message")
     val f: Future[String] = for {
-      m1 <- (actor ? "Hello").mapTo[String]
-      m0 <- mapTo(actor ! "happy")
-      m2 <- (actor ? "happy").mapTo[String]
+      m1 <- (actor ? "Hello")
+      m0 <- ((_:Unit) => Future[String](""))(actor ! "happy")
+      m2 <- (actor ? "happy")
     } yield m1+","+m2
     f.onSuccess {
       case msg: String => println(msg)

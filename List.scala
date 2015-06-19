@@ -41,14 +41,16 @@ object List {
     case Cons(h,t) => Cons(h, append(t, a2))
   }
 
-  def range (s: Int, e: Int): List[Int] = {
+  def range (s: Int, e: Int, i: Int): List[Int] = {
     def create (l: List[Int], m: Int): List[Int] = m match {
       case n if s >= e => Nil
-      case o if o+1 >= e => append(l, List(o))
-      case p => create(append(l, List(p)), p+1)
+      case o if o+i >= e => append(l, List(o))
+      case p => create(append(l, List(p)), p+i)
     }
     create(Nil, s)
   }
+
+  def range (s: Int, e: Int): List[Int] = range(s, e, 1)
 
   def init[A] (l: List[A]): List[A] = {
     def func[A] (l1: List[A], l2: List[A]): List[A] = l2 match {

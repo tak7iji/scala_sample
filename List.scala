@@ -40,7 +40,16 @@ object List {
     case Nil => a2
     case Cons(h,t) => Cons(h, append(t, a2))
   }
-  
+
+  def range (s: Int, e: Int): List[Int] = {
+    def create (l: List[Int], m: Int): List[Int] = m match {
+      case n if s >= e => Nil
+      case o if o+1 >= e => append(l, List(o))
+      case p => create(append(l, List(p)), p+1)
+    }
+    create(Nil, s)
+  }
+
   def init[A] (l: List[A]): List[A] = {
     def func[A] (l1: List[A], l2: List[A]): List[A] = l2 match {
       case Nil => Nil
@@ -62,7 +71,7 @@ object List {
   def length[A] (as: List[A]): Int = {
     foldRight(as, 0)((x,y) => 1 + y)
   }
-  
+
   def foldLeft[A,B] (as: List[A], z: B)(f: (B,A) => B): B = {
     as match {
       case Nil => z
@@ -71,7 +80,7 @@ object List {
   }
 
   def sum3(ints: List[Int]): Int = foldLeft(ints, 0)(_+_)
-  
+
   def product3(ds: List[Double]): Double = foldLeft(ds, 1.0)(_*_)
 
   def length2[A] (as: List[A]): Int = foldLeft(as, 0)((y,x) => 1 + y)

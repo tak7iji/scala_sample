@@ -36,11 +36,6 @@ object List {
     case _ => drop(tail(l), n-1)
   }
 
-  def append[A] (a1: List[A], a2: List[A]): List[A] = a1 match {
-    case Nil => a2
-    case Cons(h,t) => Cons(h, append(t, a2))
-  }
-
   def range (s: Int, e: Int, i: Int): List[Int] = {
     def create (l: List[Int], m: Int): List[Int] = m match {
       case n if s >= e => Nil
@@ -86,5 +81,13 @@ object List {
   def product3(ds: List[Double]): Double = foldLeft(ds, 1.0)(_*_)
 
   def length2[A] (as: List[A]): Int = foldLeft(as, 0)((y,x) => 1 + y)
+
+  def append[A] (a1: List[A], a2: List[A]): List[A] = a1 match {
+    case Nil => a2
+    case Cons(h,t) => Cons(h, append(t, a2))
+  }
+
+  def append2[A] (a1: List[A], a2: List[A]): List[A] = foldRight(a1, a2)(Cons(_,_))
+
 }
 

@@ -16,5 +16,8 @@ object Main {
     val ex4: List[Int] = List.range(1,10000)
 //    println(List.sum2(ex4))
     println(List.sum3(ex4))
+    println(List.append2(ex1,ex2))
+    println(List.append3(ex1,ex2))
   }
+
 }

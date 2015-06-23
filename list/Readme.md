@@ -1,2 +1,2 @@
-sbt compile
-sbt run test.Bench
+    $ sbt compile
+    $ sbt run test.Bench

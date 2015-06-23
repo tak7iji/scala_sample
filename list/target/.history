@@ -1,0 +1,7 @@
+run Bench
+compile Bench.scala
+compile
+run
+run Bench
+compile
+run test.Benchmark

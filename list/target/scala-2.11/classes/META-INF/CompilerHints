@@ -1,0 +1,16 @@
+dontinline,test/Bench.sum1_avgt_jmhLoop
+dontinline,test/Bench.sum1_sample_jmhLoop
+dontinline,test/Bench.sum1_ss_jmhStub
+dontinline,test/Bench.sum1_thrpt_jmhLoop
+dontinline,test/Bench.sum2_avgt_jmhLoop
+dontinline,test/Bench.sum2_sample_jmhLoop
+dontinline,test/Bench.sum2_ss_jmhStub
+dontinline,test/Bench.sum2_thrpt_jmhLoop
+dontinline,test/Bench.sum3_avgt_jmhLoop
+dontinline,test/Bench.sum3_sample_jmhLoop
+dontinline,test/Bench.sum3_ss_jmhStub
+dontinline,test/Bench.sum3_thrpt_jmhLoop
+inline,org/openjdk/jmh/infra/Blackhole.clearSinks
+inline,test/Bench.sum1
+inline,test/Bench.sum2
+inline,test/Bench.sum3

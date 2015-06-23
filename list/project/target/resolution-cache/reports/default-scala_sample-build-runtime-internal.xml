@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="scala_sample-build"
+		revision="0.1-SNAPSHOT"
+		extra-scalaVersion="2.10"
+		extra-sbtVersion="0.13"
+		conf="runtime-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20150623134209"/>
+	<dependencies>
+		<module organisation="pl.project13.scala" name="sbt-jmh">
+			<revision name="0.1.4" status="release" pubdate="20140622182651" resolver="sbt-plugin-releases" artresolver="sbt-plugin-releases" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="true" searched="true" default="false" conf="compile, default(compile)" position="0">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="1928" time="7594" location="/root/.ivy2/cache/scala_2.10/sbt_0.13/pl.project13.scala/sbt-jmh/ivy-0.1.4.xml" searched="true" original-local-location="/root/.ivy2/cache/scala_2.10/sbt_0.13/pl.project13.scala/sbt-jmh/ivy-0.1.4.xml.original" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/pl.project13.scala/sbt-jmh/scala_2.10/sbt_0.13/0.1.4/ivys/ivy.xml"/>
+				<caller organisation="default" name="scala_sample-build" conf="compile, runtime-internal, runtime, optional" rev="0.1.4" rev-constraint-default="0.1.4" rev-constraint-dynamic="0.1.4" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbt-jmh" type="jar" ext="jar" status="successful" details="" size="27796" time="8859" location="/root/.ivy2/cache/scala_2.10/sbt_0.13/pl.project13.scala/sbt-jmh/jars/sbt-jmh-0.1.4.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/pl.project13.scala/sbt-jmh/scala_2.10/sbt_0.13/0.1.4/jars/sbt-jmh.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.openjdk.jmh" name="jmh-generator-bytecode">
+			<revision name="0.9" status="release" pubdate="20140610204555" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="4">
+				<metadata-artifact status="successful" details="" size="5472" time="1736" location="/root/.ivy2/cache/org.openjdk.jmh/jmh-generator-bytecode/ivy-0.9.xml" searched="true" original-local-location="/root/.ivy2/cache/org.openjdk.jmh/jmh-generator-bytecode/ivy-0.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/openjdk/jmh/jmh-generator-bytecode/0.9/jmh-generator-bytecode-0.9.pom"/>
+				<caller organisation="pl.project13.scala" name="sbt-jmh" conf="compile" rev="0.9" rev-constraint-default="0.9" rev-constraint-dynamic="0.9" callerrev="0.1.4"/>
+				<artifacts>
+					<artifact name="jmh-generator-bytecode" type="jar" ext="jar" status="successful" details="" size="18565" time="2021" location="/root/.ivy2/cache/org.openjdk.jmh/jmh-generator-bytecode/jars/jmh-generator-bytecode-0.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/openjdk/jmh/jmh-generator-bytecode/0.9/jmh-generator-bytecode-0.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.openjdk.jmh" name="jmh-generator-asm">
+			<revision name="0.9" status="release" pubdate="20140610204331" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="6">
+				<metadata-artifact status="successful" details="" size="4373" time="1788" location="/root/.ivy2/cache/org.openjdk.jmh/jmh-generator-asm/ivy-0.9.xml" searched="true" original-local-location="/root/.ivy2/cache/org.openjdk.jmh/jmh-generator-asm/ivy-0.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/openjdk/jmh/jmh-generator-asm/0.9/jmh-generator-asm-0.9.pom"/>
+				<caller organisation="org.openjdk.jmh" name="jmh-generator-bytecode" conf="default, compile, runtime, master" rev="0.9" rev-constraint-default="0.9" rev-constraint-dynamic="0.9" callerrev="0.9"/>
+				<caller organisation="pl.project13.scala" name="sbt-jmh" conf="compile" rev="0.9" rev-constraint-default="0.9" rev-constraint-dynamic="0.9" callerrev="0.1.4"/>
+				<artifacts>
+					<artifact name="jmh-generator-asm" type="jar" ext="jar" status="successful" details="" size="29984" time="1837" location="/root/.ivy2/cache/org.openjdk.jmh/jmh-generator-asm/jars/jmh-generator-asm-0.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/openjdk/jmh/jmh-generator-asm/0.9/jmh-generator-asm-0.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm">
+			<revision name="4.2" status="release" pubdate="20131012170117" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<metadata-artifact status="successful" details="" size="1933" time="1623" location="/root/.ivy2/cache/org.ow2.asm/asm/ivy-4.2.xml" searched="true" original-local-location="/root/.ivy2/cache/org.ow2.asm/asm/ivy-4.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm/4.2/asm-4.2.pom"/>
+				<caller organisation="org.openjdk.jmh" name="jmh-generator-asm" conf="compile, runtime" rev="4.2" rev-constraint-default="4.2" rev-constraint-dynamic="4.2" callerrev="0.9"/>
+				<artifacts>
+					<artifact name="asm" type="jar" ext="jar" status="successful" details="" size="47895" time="1735" location="/root/.ivy2/cache/org.ow2.asm/asm/jars/asm-4.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ow2/asm/asm/4.2/asm-4.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.openjdk.jmh" name="jmh-generator-reflection">
+			<revision name="0.9" status="release" pubdate="20140610204302" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="5">
+				<metadata-artifact status="successful" details="" size="4007" time="1736" location="/root/.ivy2/cache/org.openjdk.jmh/jmh-generator-reflection/ivy-0.9.xml" searched="true" original-local-location="/root/.ivy2/cache/org.openjdk.jmh/jmh-generator-reflection/ivy-0.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/openjdk/jmh/jmh-generator-reflection/0.9/jmh-generator-reflection-0.9.pom"/>
+				<caller organisation="org.openjdk.jmh" name="jmh-generator-bytecode" conf="default, compile, runtime, master" rev="0.9" rev-constraint-default="0.9" rev-constraint-dynamic="0.9" callerrev="0.9"/>
+				<caller organisation="org.openjdk.jmh" name="jmh-generator-asm" conf="compile, runtime" rev="0.9" rev-constraint-default="0.9" rev-constraint-dynamic="0.9" callerrev="0.9"/>
+				<caller organisation="pl.project13.scala" name="sbt-jmh" conf="compile" rev="0.9" rev-constraint-default="0.9" rev-constraint-dynamic="0.9" callerrev="0.1.4"/>
+				<artifacts>
+					<artifact name="jmh-generator-reflection" type="jar" ext="jar" status="successful" details="" size="24454" time="1862" location="/root/.ivy2/cache/org.openjdk.jmh/jmh-generator-reflection/jars/jmh-generator-reflection-0.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/openjdk/jmh/jmh-generator-reflection/0.9/jmh-generator-reflection-0.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.openjdk.jmh" name="jmh-core">
+			<revision name="0.9" status="release" pubdate="20140610204002" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="1">
+				<metadata-artifact status="successful" details="" size="9742" time="1704" location="/root/.ivy2/cache/org.openjdk.jmh/jmh-core/ivy-0.9.xml" searched="true" original-local-location="/root/.ivy2/cache/org.openjdk.jmh/jmh-core/ivy-0.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/openjdk/jmh/jmh-core/0.9/jmh-core-0.9.pom"/>
+				<caller organisation="org.openjdk.jmh" name="jmh-generator-bytecode" conf="default, compile, runtime, master" rev="0.9" rev-constraint-default="0.9" rev-constraint-dynamic="0.9" callerrev="0.9"/>
+				<caller organisation="org.openjdk.jmh" name="jmh-generator-asm" conf="compile, runtime" rev="0.9" rev-constraint-default="0.9" rev-constraint-dynamic="0.9" callerrev="0.9"/>
+				<caller organisation="org.openjdk.jmh" name="jmh-generator-reflection" conf="compile, runtime" rev="0.9" rev-constraint-default="0.9" rev-constraint-dynamic="0.9" callerrev="0.9"/>
+				<caller organisation="pl.project13.scala" name="sbt-jmh" conf="compile" rev="0.9" rev-constraint-default="0.9" rev-constraint-dynamic="0.9" callerrev="0.1.4"/>
+				<artifacts>
+					<artifact name="jmh-core" type="jar" ext="jar" status="successful" details="" size="359108" time="2371" location="/root/.ivy2/cache/org.openjdk.jmh/jmh-core/jars/jmh-core-0.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/openjdk/jmh/jmh-core/0.9/jmh-core-0.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-math3">
+			<revision name="3.2" status="release" pubdate="20130403043128" resolver="public" artresolver="public" homepage="http://commons.apache.org/proper/commons-math/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<metadata-artifact status="successful" details="" size="17431" time="2087" location="/root/.ivy2/cache/org.apache.commons/commons-math3/ivy-3.2.xml" searched="true" original-local-location="/root/.ivy2/cache/org.apache.commons/commons-math3/ivy-3.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.2/commons-math3-3.2.pom"/>
+				<caller organisation="org.openjdk.jmh" name="jmh-core" conf="default, compile, runtime, master" rev="3.2" rev-constraint-default="3.2" rev-constraint-dynamic="3.2" callerrev="0.9"/>
+				<artifacts>
+					<artifact name="commons-math3" type="jar" ext="jar" status="successful" details="" size="1692782" time="6149" location="/root/.ivy2/cache/org.apache.commons/commons-math3/jars/commons-math3-3.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sf.jopt-simple" name="jopt-simple">
+			<revision name="4.6" status="release" pubdate="20140106104903" resolver="public" artresolver="public" homepage="http://pholser.github.com/jopt-simple" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="The MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="successful" details="" size="11293" time="1736" location="/root/.ivy2/cache/net.sf.jopt-simple/jopt-simple/ivy-4.6.xml" searched="true" original-local-location="/root/.ivy2/cache/net.sf.jopt-simple/jopt-simple/ivy-4.6.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.pom"/>
+				<caller organisation="org.openjdk.jmh" name="jmh-core" conf="default, compile, runtime, master" rev="4.6" rev-constraint-default="4.6" rev-constraint-dynamic="4.6" callerrev="0.9"/>
+				<artifacts>
+					<artifact name="jopt-simple" type="jar" ext="jar" status="successful" details="" size="62477" time="1792" location="/root/.ivy2/cache/net.sf.jopt-simple/jopt-simple/jars/jopt-simple-4.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

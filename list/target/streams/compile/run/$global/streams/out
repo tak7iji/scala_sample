@@ -1,0 +1,469 @@
+[0m[[0minfo[0m] [0mRunning org.openjdk.jmh.Main [0m
+[0m[[0minfo[0m] [0m# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.45-30.b13.el7_1.x86_64/jre/bin/java[0m
+[0m[[0minfo[0m] [0m# VM options: <none>[0m
+[0m[[0minfo[0m] [0m# Warmup: 20 iterations, 1 s each[0m
+[0m[[0minfo[0m] [0m# Measurement: 20 iterations, 1 s each[0m
+[0m[[0minfo[0m] [0m# Threads: 1 thread, will synchronize iterations[0m
+[0m[[0minfo[0m] [0m# Benchmark mode: Throughput, ops/time[0m
+[0m[[0minfo[0m] [0m# Benchmark: test.Bench.sum1[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m# Run progress: 0.00% complete, ETA 00:20:00[0m
+[0m[[0minfo[0m] [0m# Fork: 1 of 10[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   1: 2281624.096 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   2: 2708975.482 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   3: 3575322.136 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   4: 3601178.852 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   5: 3594977.128 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   6: 2978793.214 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   7: 3447945.052 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   8: 2240283.398 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   9: 3387595.167 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  10: 3205285.209 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  11: 3531303.768 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  12: 2247625.292 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  13: 3084790.646 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  14: 3416827.178 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  15: 3608497.216 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  16: 2742252.152 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  17: 2896729.868 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  18: 2815030.227 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  19: 2945389.057 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  20: 3564539.885 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   1: 3298567.417 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   2: 3222685.162 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   3: 3157130.837 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   4: 3701003.006 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   5: 3226395.274 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   6: 2583347.311 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   7: 2935508.362 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   8: 2471532.647 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   9: 3481370.878 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  10: 3522274.373 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  11: 3423172.676 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  12: 2726041.500 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  13: 2543113.113 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  14: 3698102.958 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  15: 2779538.748 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  16: 3174000.223 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  17: 3600777.700 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  18: 2750645.540 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  19: 3020173.483 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  20: 3635162.993 ops/s[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m# Run progress: 3.33% complete, ETA 00:23:34[0m
+[0m[[0minfo[0m] [0m# Fork: 2 of 10[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   1: 2094032.733 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   2: 2277862.525 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   3: 2840636.805 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   4: 2791671.000 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   5: 3682974.678 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   6: 3721271.493 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   7: 3193171.833 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   8: 3261800.960 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   9: 2314603.053 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  10: 2322971.146 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  11: 2635516.874 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  12: 2537789.115 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  13: 2825317.046 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  14: 3667398.782 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  15: 3219981.007 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  16: 2190905.126 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  17: 2828919.894 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  18: 3646220.582 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  19: 2426839.945 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  20: 3150040.038 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   1: 3657080.784 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   2: 2222970.685 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   3: 2685204.394 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   4: 3213076.897 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   5: 2603203.974 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   6: 3140262.728 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   7: 2991214.737 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   8: 3282284.946 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   9: 3732143.923 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  10: 2783486.078 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  11: 2582907.721 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  12: 3711827.217 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  13: 3242916.975 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  14: 2731403.855 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  15: 3713692.018 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  16: 2411173.221 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  17: 3604809.220 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  18: 2951819.015 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  19: 3226608.915 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  20: 3263094.879 ops/s[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m# Run progress: 6.67% complete, ETA 00:22:42[0m
+[0m[[0minfo[0m] [0m# Fork: 3 of 10[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   1: 2469276.295 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   2: 2495635.048 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   3: 3698098.020 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   4: 3696266.257 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   5: 3325116.679 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   6: 3690020.847 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   7: 3236947.675 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   8: 3333031.857 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   9: 2787577.232 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  10: 3658807.446 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  11: 2800517.493 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  12: 2826188.569 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  13: 3656117.069 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  14: 3196198.740 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  15: 2995413.007 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  16: 2693879.763 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  17: 3210362.937 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  18: 3290456.875 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  19: 3734653.218 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  20: 2533149.634 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   1: 3149457.367 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   2: 3407389.583 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   3: 3236364.843 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   4: 3348882.059 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   5: 3265208.392 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   6: 2893410.769 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   7: 2319687.393 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   8: 3407670.582 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   9: 2674437.361 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  10: 3470623.386 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  11: 2350131.055 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  12: 2517114.239 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  13: 2776381.074 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  14: 2604220.735 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  15: 2703077.938 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  16: 3108367.645 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  17: 3505144.483 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  18: 3473526.621 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  19: 3735742.166 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  20: 2494104.959 ops/s[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m# Run progress: 10.00% complete, ETA 00:21:53[0m
+[0m[[0minfo[0m] [0m# Fork: 4 of 10[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   1: 2493576.642 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   2: 2195848.198 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   3: 3694151.541 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   4: 3216722.932 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   5: 3419690.841 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   6: 2486264.129 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   7: 3481363.503 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   8: 3219655.033 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   9: 2800375.070 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  10: 2340563.669 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  11: 3583027.233 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  12: 3195175.018 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  13: 3255391.843 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  14: 2848325.941 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  15: 3582247.529 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  16: 2089855.767 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  17: 2756429.840 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  18: 2887734.132 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  19: 3046743.287 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  20: 2700581.153 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   1: 3301990.616 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   2: 3787269.588 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   3: 3775364.197 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   4: 3188376.060 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   5: 2725103.143 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   6: 3721833.314 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   7: 3278789.328 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   8: 2848754.513 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   9: 3593775.241 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  10: 2983317.424 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  11: 3280915.445 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  12: 3307141.299 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  13: 3780382.921 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  14: 3774215.014 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  15: 2852786.793 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  16: 3770372.742 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  17: 2615996.435 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  18: 2503380.464 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  19: 3192517.465 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  20: 2711987.748 ops/s[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m# Run progress: 13.33% complete, ETA 00:21:04[0m
+[0m[[0minfo[0m] [0m# Fork: 5 of 10[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   1: 2513716.032 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   2: 2915277.933 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   3: 3662774.055 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   4: 3298555.931 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   5: 3200824.873 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   6: 3243661.921 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   7: 3658662.905 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   8: 3662134.173 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   9: 3163335.576 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  10: 3667116.290 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  11: 3672084.284 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  12: 2924838.516 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  13: 2879396.592 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  14: 3383950.090 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  15: 3672582.966 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  16: 3199270.690 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  17: 2454983.610 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  18: 3323322.042 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  19: 3732095.780 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  20: 3742215.757 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   1: 3278383.024 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   2: 3259784.521 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   3: 3710791.964 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   4: 3101354.581 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   5: 2618180.501 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   6: 3390389.154 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   7: 3749514.684 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   8: 3743490.561 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   9: 3113410.585 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  10: 2835854.031 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  11: 2795113.662 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  12: 2474724.232 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  13: 2954723.863 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  14: 3704012.215 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  15: 3749802.745 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  16: 2611901.670 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  17: 3302876.101 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  18: 3232969.840 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  19: 3716809.470 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  20: 2803335.086 ops/s[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m# Run progress: 16.67% complete, ETA 00:20:16[0m
+[0m[[0minfo[0m] [0m# Fork: 6 of 10[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   1: 2558495.934 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   2: 2299235.011 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   3: 3475757.181 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   4: 2968590.096 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   5: 2769932.771 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   6: 3395227.809 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   7: 3145700.436 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   8: 3240456.623 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   9: 2356925.240 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  10: 2480205.207 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  11: 3162748.937 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  12: 3654422.570 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  13: 2694676.773 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  14: 3652986.076 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  15: 3616518.786 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  16: 2867033.435 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  17: 3571766.578 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  18: 3647234.677 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  19: 2417629.435 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  20: 3405939.377 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   1: 3667303.211 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   2: 3654530.241 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   3: 3172996.866 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   4: 3660509.358 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   5: 2734652.044 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   6: 2649498.297 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   7: 3275192.239 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   8: 3190553.524 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   9: 2299861.683 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  10: 3183830.939 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  11: 3635416.123 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  12: 2777261.903 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  13: 3642137.097 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  14: 2392504.104 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  15: 2418411.064 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  16: 2536548.238 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  17: 3076816.692 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  18: 3221219.709 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  19: 3154766.480 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  20: 2871484.453 ops/s[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m# Run progress: 20.00% complete, ETA 00:19:28[0m
+[0m[[0minfo[0m] [0m# Fork: 7 of 10[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   1: 2563848.882 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   2: 3118307.848 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   3: 3737010.306 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   4: 3736078.502 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   5: 3345918.186 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   6: 2962932.045 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   7: 2907038.017 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   8: 3581392.269 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   9: 3722279.390 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  10: 3728777.680 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  11: 3257946.772 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  12: 3729487.190 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  13: 2428530.909 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  14: 3563746.301 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  15: 3074193.608 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  16: 3374943.103 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  17: 2810619.743 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  18: 2858900.546 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  19: 3555915.497 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  20: 3705254.286 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   1: 2585709.152 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   2: 2658355.146 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   3: 3555139.105 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   4: 3257668.756 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   5: 2965708.484 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   6: 3681327.983 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   7: 2773851.988 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   8: 2630196.544 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   9: 3019134.799 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  10: 2711237.613 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  11: 3487492.189 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  12: 2654004.956 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  13: 3261498.245 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  14: 3247686.824 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  15: 3722420.519 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  16: 3219556.226 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  17: 3133550.595 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  18: 3707865.238 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  19: 3700043.089 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  20: 3228553.998 ops/s[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m# Run progress: 23.33% complete, ETA 00:18:39[0m
+[0m[[0minfo[0m] [0m# Fork: 8 of 10[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   1: 2570976.892 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   2: 2856160.219 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   3: 2930008.640 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   4: 3534367.523 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   5: 3234479.849 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   6: 3231664.213 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   7: 3038852.568 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   8: 3157078.563 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   9: 2785919.458 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  10: 3287476.626 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  11: 3210186.656 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  12: 3706392.289 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  13: 3694908.158 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  14: 3436120.700 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  15: 3604149.831 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  16: 3696634.937 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  17: 3275440.762 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  18: 2838425.486 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  19: 3383335.611 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  20: 3297735.368 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   1: 2953368.689 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   2: 2721520.317 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   3: 2632264.947 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   4: 3728456.191 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   5: 2371274.970 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   6: 3231194.397 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   7: 2286029.295 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   8: 2527014.795 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   9: 2884002.067 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  10: 2732812.759 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  11: 2687793.657 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  12: 2748671.163 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  13: 2353345.110 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  14: 3269865.400 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  15: 3349630.176 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  16: 3739322.443 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  17: 2987912.465 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  18: 3056665.845 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  19: 3266747.991 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  20: 3252369.321 ops/s[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m# Run progress: 26.67% complete, ETA 00:17:50[0m
+[0m[[0minfo[0m] [0m# Fork: 9 of 10[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   1: 2639331.001 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   2: 3018803.110 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   3: 3438310.449 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   4: 3119106.633 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   5: 3730766.156 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   6: 3375868.574 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   7: 3383819.652 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   8: 3286840.530 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   9: 3268187.082 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  10: 3359815.291 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  11: 3666484.697 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  12: 3251427.348 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  13: 3222692.670 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  14: 3698345.262 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  15: 3229138.242 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  16: 3670828.039 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  17: 3707805.624 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  18: 3362275.209 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  19: 2827621.187 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  20: 3677435.128 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   1: 3250051.098 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   2: 2986822.062 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   3: 3300219.350 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   4: 3701176.990 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   5: 3674629.222 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   6: 3709289.987 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   7: 3254023.571 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   8: 3215077.256 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   9: 2761600.216 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  10: 2326152.263 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  11: 2726104.812 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  12: 3574423.211 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  13: 2732454.336 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  14: 3284298.486 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  15: 3668928.678 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  16: 2483955.869 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  17: 3019916.237 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  18: 2679712.203 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  19: 3184824.102 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  20: 2324769.232 ops/s[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m# Run progress: 30.00% complete, ETA 00:17:01[0m
+[0m[[0minfo[0m] [0m# Fork: 10 of 10[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   1: 2388887.268 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   2: 2597752.372 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   3: 3521576.002 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   4: 2836097.828 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   5: 3748677.561 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   6: 3296842.965 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   7: 3196390.197 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   8: 3721926.714 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   9: 3258481.186 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  10: 3733153.107 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  11: 3260672.830 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  12: 3223153.086 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  13: 3033262.558 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  14: 3210345.960 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  15: 3132187.174 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  16: 3208297.103 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  17: 3700808.387 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  18: 2865184.414 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  19: 2525456.094 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  20: 2862408.412 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   1: 3001508.896 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   2: 3198197.858 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   3: 3739763.907 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   4: 3759470.798 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   5: 3738581.018 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   6: 2848308.356 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   7: 3741150.773 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   8: 3676892.071 ops/s[0m
+[0m[[0minfo[0m] [0mIteration   9: 2948812.293 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  10: 3561180.514 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  11: 2413525.968 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  12: 3753322.388 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  13: 2762200.761 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  14: 3507225.298 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  15: 3360684.342 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  16: 3751041.240 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  17: 3752286.288 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  18: 3300003.062 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  19: 3271831.012 ops/s[0m
+[0m[[0minfo[0m] [0mIteration  20: 3748817.040 ops/s[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mResult: 3135871.760 ±(99.9%) 103608.773 ops/s [Average][0m
+[0m[[0minfo[0m] [0m  Statistics: (min, avg, max) = (2222970.685, 3135871.760, 3787269.588), stdev = 438686.032[0m
+[0m[[0minfo[0m] [0m  Confidence interval (99.9%): [3032262.987, 3239480.533][0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.45-30.b13.el7_1.x86_64/jre/bin/java[0m
+[0m[[0minfo[0m] [0m# VM options: <none>[0m
+[0m[[0minfo[0m] [0m# Warmup: 20 iterations, 1 s each[0m
+[0m[[0minfo[0m] [0m# Measurement: 20 iterations, 1 s each[0m
+[0m[[0minfo[0m] [0m# Threads: 1 thread, will synchronize iterations[0m
+[0m[[0minfo[0m] [0m# Benchmark mode: Throughput, ops/time[0m
+[0m[[0minfo[0m] [0m# Benchmark: test.Bench.sum2[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m# Run progress: 33.33% complete, ETA 00:16:13[0m
+[0m[[0minfo[0m] [0m# Fork: 1 of 10[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   1: 2268328.153 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   2: 2725986.774 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   3: 3418981.864 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   4: 3401046.978 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   5: 3449331.888 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   6: 2886454.077 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   7: 3102660.588 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   8: 2594524.252 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration   9: 3394962.566 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  10: 3035034.644 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  11: 2626316.271 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  12: 3019929.269 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  13: 2967714.880 ops/s[0m
+[0m[[0minfo[0m] [0m# Warmup Iteration  14: 3159565.099 ops/s[0m

@@ -18,6 +18,7 @@ object Main {
     println(List.sum3(ex4))
     println(List.append2(ex1,ex2))
     println(List.append3(ex1,ex2))
+    println(List.reverse(ex1))
   }
 
 }

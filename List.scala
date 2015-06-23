@@ -89,7 +89,11 @@ object List {
 
   def append2[A] (a1: List[A], a2: List[A]): List[A] = foldRight(a1, a2)(Cons(_,_))
 
+  def reverse[A] (as: List[A]): List[A] = {
+    foldLeft(as, Nil: List[A])((x,y) => Cons(y,x))
+  }
+
   // a1を逆転させてからやれば良さそう？
-  //def append3[A] (a1: List[A], a2: List[A]): List[A] = foldLeft(a1, a2)((x,y) => Cons(y,x))
+  def append3[A] (a1: List[A], a2: List[A]): List[A] = foldLeft(reverse(a1), a2)((x,y) => Cons(y,x))
 }
 

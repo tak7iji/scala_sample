@@ -105,5 +105,13 @@ object List {
     case Nil => Nil
     case Cons(s, xs) => Cons(s.toDouble, toDouble(xs))
   }
+
+  def map[A,B] (as: List[A])(f: A => B): List[B] = as match {
+    case Nil => Nil
+    case Cons(x, xs) => Cons(f(x), map(xs)(f))
+  }
+
+  def addOne2 (il: List[Int]): List[Int] = map(il)(x => x + 1)
+  def toDouble2 (sl: List[String]): List[Double] = map(sl)(x => x.toDouble)
 }
 

@@ -21,9 +21,11 @@ object Main {
     println(List.reverse(ex1))
 
     println(List.addOne(ex1))
+    println(List.addOne2(ex1))
 
     val ex5: List[String] = List("1","2","3","4","5")
     println(List.toDouble(ex5))
+    println(List.toDouble2(ex5))
   }
 
 }

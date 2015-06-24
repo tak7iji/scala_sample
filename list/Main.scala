@@ -19,6 +19,11 @@ object Main {
     println(List.append2(ex1,ex2))
     println(List.append3(ex1,ex2))
     println(List.reverse(ex1))
+
+    println(List.addOne(ex1))
+
+    val ex5: List[String] = List("1","2","3","4","5")
+    println(List.toDouble(ex5))
   }
 
 }

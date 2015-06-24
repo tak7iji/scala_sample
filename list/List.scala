@@ -95,5 +95,15 @@ object List {
 
   // a1を逆転させてからやれば良さそう？
   def append3[A] (a1: List[A], a2: List[A]): List[A] = foldLeft(reverse(a1), a2)((x,y) => Cons(y,x))
+
+  def addOne (il: List[Int]): List[Int] = il match {
+    case Nil => Nil
+    case Cons(i, j) => Cons(i+1, addOne(j))
+  }
+
+  def toDouble (sl: List[String]): List[Double] = sl match {
+    case Nil => Nil
+    case Cons(s, xs) => Cons(s.toDouble, toDouble(xs))
+  }
 }
 

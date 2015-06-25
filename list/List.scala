@@ -113,5 +113,10 @@ object List {
 
   def addOne2 (il: List[Int]): List[Int] = map(il)(x => x + 1)
   def toDouble2 (sl: List[String]): List[Double] = map(sl)(x => x.toDouble)
+
+  def flatMap[A,B] (as: List[A])(f: A => List[B]): List[B] = as match {
+    case Nil => Nil
+    case Cons(x, xs) => append(f(x), flatMap(xs)(f))
+  }
 }
 

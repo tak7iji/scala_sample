@@ -26,6 +26,9 @@ object Main {
     val ex5: List[String] = List("1","2","3","4","5")
     println(List.toDouble(ex5))
     println(List.toDouble2(ex5))
+
+    val ex6: List[List[Int]] = List(List(), List(1), List(2), List())
+    println(List.flatMap(ex6)(x=>x))
   }
 
 }

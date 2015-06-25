@@ -33,6 +33,11 @@ object Main {
 
     println(List.filter(ex1)(x=>x%2!=0))
     println(List.filter2(ex1)(x=>x%2!=0))
+
+    println(List.zip(List(1,2,3), List(4,5)))
+    println(List.zip2(List(1,2,3), List(4,5)))
+    println(List.zip2(List(4,5), List(1,2,3)))
+    println(List.zip3(List(1,2,3), List(4,5)))
   }
 
 }

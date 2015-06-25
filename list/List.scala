@@ -129,6 +129,27 @@ object List {
 
   def filter2[A] (as: List[A])(f: A => Boolean): List[A] = flatMap(as)(x => if(f(x) == true) List(x) else Nil)
 
-  def zip[Int] (l1: List[Int], l2: List[Int]): List[Int] 
+  def zip (l1: List[Int], l2: List[Int]): List[Int] = {
+    def _zip (l1: List[Int], l2: List[Int], l: List[Int]): List[Int] = (l1, l2) match {
+      case (Nil, _) => l
+      case (_, Nil) => l
+      case (Cons(x, xs), Cons(y, ys)) => _zip(xs, ys, append(l, List(x+y)))
+    }
+    _zip(l1, l2, Nil)
+  }
+
+  def zipWith[A,B] (l1: List[A], l2: List[A])(f: (A, A) => B): List[B] = {
+    def _zip[A] (l1: List[A], l2: List[A], l: List[B])(f: (A, A) => B): List[B] = (l1, l2) match {
+      case (Nil, _) => l
+      case (_, Nil) => l
+      case (Cons(x, xs), Cons(y, ys)) => _zip(xs, ys, append(l, List(f(x,y))))(f)
+    }
+    _zip(l1, l2, Nil)(f)
+  }
+
+  def zip2 (l1: List[Int], l2: List[Int]): List[Int] = zipWith(l1, l2)(_+_)
+
+  // scala.collection.immutable.List.zip相当
+  def zip3 (l1: List[Int], l2: List[Int]): List[(Int,Int)] = zipWith(l1, l2)((_,_))
 }
 

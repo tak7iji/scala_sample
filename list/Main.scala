@@ -29,6 +29,10 @@ object Main {
 
     val ex6: List[List[Int]] = List(List(), List(1), List(2), List())
     println(List.flatMap(ex6)(x=>x))
+    println(List.flatMap(Nil)(x=>x))
+
+    println(List.filter(ex1)(x=>x%2!=0))
+    println(List.filter2(ex1)(x=>x%2!=0))
   }
 
 }

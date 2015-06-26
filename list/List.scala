@@ -119,12 +119,12 @@ object List {
     case Cons(x, xs) => append3(f(x), flatMap(xs)(f))
   }
 
-  def filter[A] (as: List[A])(f: A => Boolean): List[A] = {
-    def _filter[A] (as: List[A], ns: List[A])(f: A => Boolean): List[A] = as match {
-      case Nil => ns
-      case Cons(x, xs) => _filter(xs, if(f(x) == true) append(ns, List(x)) else ns)(f)
+  def filter[A] (as: List[A])(f: A => Boolean): List[A] = as match {
+    case Nil => Nil
+    case Cons(x, xs) => f(x) match {
+      case true => Cons(x, filter(xs)(f))
+      case false => filter(xs)(f)
     }
-    _filter(as, Nil)(f)
   }
 
   def filter2[A] (as: List[A])(f: A => Boolean): List[A] = flatMap(as)(x => if(f(x) == true) List(x) else Nil)

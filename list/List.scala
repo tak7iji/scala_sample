@@ -37,15 +37,18 @@ object List {
   }
 
   def range (s: Int, e: Int, i: Int): List[Int] = {
-    def create (l: List[Int], m: Int): List[Int] = m match {
-      case n if s >= e => Nil
-      case o if o+i >= e => append(l, List(o))
-      case p => create(append(l, List(p)), p+i)
+    def create (l: List[Int], m: Int)(f: (Int, Int) => Boolean): List[Int] = m match {
+      case n if f(s, e) || f(s, n+i) => Nil
+      case o if f(o+i, e) => append(l, List(o))
+      case p => create(append(l, List(p)), p+i)(f)
     }
-    create(Nil, s)
+
+    if(s < e) create(Nil, s)(_ >= _) else create(Nil, s)(_ <= _)
   }
 
-  def range (s: Int, e: Int): List[Int] = range(s, e, 1)
+  def range (s: Int, e: Int): List[Int] = {
+    if (s < e) range(s, e, 1) else Nil
+  }
 
   def init[A] (l: List[A]): List[A] = {
     def func[A] (l1: List[A], l2: List[A]): List[A] = l2 match {

@@ -1,13 +1,13 @@
-package fpinscala
+package errorhandling
 
-sealed trait Option[+A] {
-  val value: A
+//import scala.Nothing
 
+trait Option[+A] {
   def map[B](f: A => B): Option[B] = this match {
     case None => None
+    case Some(v) => Some(f(v))
   }
 }
 
-case class Some[A](get: A) extends Option[A]
+case class Some[+A](get: A) extends Option[A]
 case object None extends Option[Nothing]
-

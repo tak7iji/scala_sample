@@ -7,6 +7,11 @@ trait Option[+A] {
     case None => None
     case Some(v) => Some(f(v))
   }
+
+  def flatMap[B](f: A => Option[B]): Option[B]
+  def getOrElse[B >: A] (default: => B): B
+  def orElse[B >: A] (ob: => Option[B]): Option[B]
+  def filter(f: A => Boolean): Option[A]
 }
 
 case class Some[+A](get: A) extends Option[A]

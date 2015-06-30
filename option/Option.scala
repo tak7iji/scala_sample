@@ -18,13 +18,17 @@ sealed trait Option[+A] {
     case Some(v) => v
   }
 
-  def orElse[B >: A] (ob: => Option[B]): Option[B] = {
-    if (this != None) this else ob
+  def orElse[B >: A] (ob: => Option[B]): Option[B] = this match {
+    case None => ob
+    case _ => this
   }
 
   def filter(f: A => Boolean): Option[A] = this match {
     case None => None
-    case Some(v) => if(f(v) == true) this else None
+    case Some(v) => f(v) match {
+      case true => this
+      case false => None
+    }
   }
 
   def lift[A,B] (f: A => B): Option[A] => Option[B] = _ map f
